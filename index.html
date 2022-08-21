@@ -112,7 +112,7 @@ function initialize()
 	
 	let markerControls1 = new THREEx.ArMarkerControls(arToolkitContext, kanjiMarker, {
 		type : 'pattern',
-		patternUrl : "data/marker.patt",
+		patternUrl : "data/kanji.patt",
 	})
 
 	// interpolates from last position to create smoother transitions when moving.
@@ -136,7 +136,7 @@ function initialize()
 	// material for portal (for debugging)
 	
 	let defaultMaterial = new THREE.MeshBasicMaterial({
-		map: loader.load("images/Flyer2.png"), 
+		map: loader.load("images/sphere-colored.png"), 
 		color: 0x444444,
 		side: THREE.DoubleSide,
 		transparent: true,
